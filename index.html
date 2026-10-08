@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Autoloom: AI-automatisering die je rompslomp overneemt</title>
+<style>
+:root{--bg:#faf8f4;--fg:#1c1b19;--mut:#6b675f;--card:#fff;--line:#e6e1d8;--acc:#d9531e;--accfg:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141311;--fg:#f3efe8;--mut:#a19b8f;--card:#1d1b18;--line:#2e2b26;--acc:#ff7a45;--accfg:#141311}}
+:root[data-theme="dark"]{--bg:#141311;--fg:#f3efe8;--mut:#a19b8f;--card:#1d1b18;--line:#2e2b26;--acc:#ff7a45;--accfg:#141311}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+.w{max-width:960px;margin:0 auto;padding:0 20px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;font-weight:700;font-size:20px;letter-spacing:-.02em}
+nav a{font-size:14px;font-weight:500;color:var(--mut);text-decoration:none}
+.logo span{color:var(--acc)}
+.r{display:flex;align-items:center;gap:16px}
+.lg{display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.lg button{padding:5px 10px;border-radius:0;background:transparent;color:var(--mut);font-size:13px;font-weight:600}
+.lg button.on{background:var(--acc);color:var(--accfg)}
+h1{font-size:clamp(34px,7vw,64px);line-height:1.05;letter-spacing:-.035em;margin:56px 0 18px;max-width:14em}
+.sub{font-size:19px;color:var(--mut);max-width:34em;margin:0 0 32px}
+form{display:flex;gap:10px;flex-wrap:wrap;max-width:460px}
+input{flex:1 1 220px;padding:14px 16px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font:inherit}
+button{padding:14px 22px;border:0;border-radius:10px;background:var(--acc);color:var(--accfg);font:inherit;font-weight:600;cursor:pointer}
+button:disabled{opacity:.6}
+.note{font-size:14px;color:var(--mut);margin:12px 0 0;min-height:22px}
+section{padding:64px 0 0}
+h2{font-size:28px;letter-spacing:-.02em;margin:0 0 24px}
+.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.c{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+.c b{display:block;font-size:18px;margin-bottom:6px}
+.c p{margin:0;color:var(--mut);font-size:15px}
+.n{color:var(--acc);font-weight:700;font-size:14px;margin-bottom:8px}
+.cta{margin:72px 0 0;padding:40px 24px;background:var(--card);border:1px solid var(--line);border-radius:18px;text-align:center}
+.cta h2{margin-bottom:8px}.cta p{color:var(--mut);margin:0 0 20px}
+footer{padding:40px 0;color:var(--mut);font-size:14px;text-align:center}
+</style>
+</head>
+<body>
+<div class="w">
+<nav><div class="logo">Auto<span>loom</span></div><div class="r"><a href="#join">Wachtlijst</a><span class="lg"><button type="button" data-l="nl">NL</button><button type="button" data-l="en">EN</button></span></div></nav>
+
+<h1>Jouw rompslomp, geweven tot automatiseringen die gewoon draaien.</h1>
+<p class="sub">Autoloom bouwt en onderhoudt AI-automatiseringen voor jouw team: inbox sorteren, data-invoer, rapportages, opvolging. Vertel ons de taak. Wij leveren de workflow.</p>
+<form id="f1" name="wachtlijst" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-wl><input type="hidden" name="form-name" value="wachtlijst"><p hidden style="display:none"><label>Niet invullen: <input name="bot-field"></label></p><input type="email" name="email" required placeholder="jij@bedrijf.nl" aria-label="E-mailadres"><button>Vroege toegang</button></form>
+<p class="note" data-note></p>
+
+<section>
+<h2>Voor je geregeld, niet zelf klussen</h2>
+<div class="g">
+<div class="c"><div class="n">01</div><b>Beschrijf de taak</b><p>Loop met ons door het repetitieve werk dat je week opslokt. Geen technische specificatie nodig.</p></div>
+<div class="c"><div class="n">02</div><b>Wij bouwen de workflow</b><p>Wij ontwerpen, testen en koppelen alles aan de tools die je al gebruikt.</p></div>
+<div class="c"><div class="n">03</div><b>Het draait en wordt beter</b><p>Wij bewaken de resultaten, lossen uitzonderingen op en houden alles werkend als je bedrijf verandert.</p></div>
+</div>
+</section>
+
+<section>
+<h2>Wat teams als eerste automatiseren</h2>
+<div class="g">
+<div class="c"><b>E-mail en supportafhandeling</b><p>Sorteren, labelen, antwoorden voorbereiden en doorsturen naar de juiste persoon.</p></div>
+<div class="c"><b>Data-invoer en synchronisatie</b><p>Verplaats informatie tussen spreadsheets, CRM-systemen en facturen zonder kopiëren en plakken.</p></div>
+<div class="c"><b>Rapportages en samenvattingen</b><p>Wekelijkse cijfers en vergadernotities, automatisch geleverd.</p></div>
+</div>
+</section>
+
+<div class="cta" id="join">
+<h2>Sta vooraan in de rij</h2>
+<p>Founding-leden op de wachtlijst krijgen voorrang bij onboarding en lanceringsprijzen.</p>
+<form id="f2" name="wachtlijst" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-wl style="margin:0 auto;justify-content:center"><input type="hidden" name="form-name" value="wachtlijst"><p hidden style="display:none"><label>Niet invullen: <input name="bot-field"></label></p><input type="email" name="email" required placeholder="jij@bedrijf.nl" aria-label="E-mailadres"><button>Aanmelden voor de wachtlijst</button></form>
+<p class="note" data-note></p>
+</div>
+<footer>© Autoloom</footer>
+</div>
+
+<script>
+(function(){
+var EN={"Wachtlijst": "Join waitlist", "Jouw rompslomp, geweven tot automatiseringen die gewoon draaien.": "Your busywork, woven into automations that just run.", "Autoloom bouwt en onderhoudt AI-automatiseringen voor jouw team: inbox sorteren, data-invoer, rapportages, opvolging. Vertel ons de taak. Wij leveren de workflow.": "Autoloom builds and maintains AI automations for your team: inbox triage, data entry, reporting, follow-ups. Tell us the task. We ship the workflow.", "Vroege toegang": "Get early access", "Voor je geregeld, niet zelf klussen": "Done-for-you, not do-it-yourself", "Beschrijf de taak": "Describe the task", "Loop met ons door het repetitieve werk dat je week opslokt. Geen technische specificatie nodig.": "Walk us through the repetitive work eating your week. No technical spec needed.", "Wij bouwen de workflow": "We build the workflow", "Wij ontwerpen, testen en koppelen alles aan de tools die je al gebruikt.": "We design, test and connect it to the tools you already use.", "Het draait en wordt beter": "It runs and improves", "Wij bewaken de resultaten, lossen uitzonderingen op en houden alles werkend als je bedrijf verandert.": "We monitor results, fix edge cases and keep it working as your business changes.", "Wat teams als eerste automatiseren": "What teams automate first", "E-mail en supportafhandeling": "Email and support triage", "Sorteren, labelen, antwoorden voorbereiden en doorsturen naar de juiste persoon.": "Sort, label, draft replies and route to the right person.", "Data-invoer en synchronisatie": "Data entry and syncing", "Verplaats informatie tussen spreadsheets, CRM-systemen en facturen zonder kopiëren en plakken.": "Move information between spreadsheets, CRMs and invoices without copy-paste.", "Rapportages en samenvattingen": "Reports and summaries", "Wekelijkse cijfers en vergadernotities, automatisch geleverd.": "Weekly numbers and meeting notes delivered automatically.", "Sta vooraan in de rij": "Be first in line", "Founding-leden op de wachtlijst krijgen voorrang bij onboarding en lanceringsprijzen.": "Founding waitlist members get priority onboarding and launch pricing.", "Aanmelden voor de wachtlijst": "Join the waitlist"};
+var M={nl:{ok:"Je staat op de lijst. We nemen snel contact op.",err:"Opslaan lukt nu niet. Probeer het zo nog eens.",ph:"jij@bedrijf.nl",al:"E-mailadres",t:"Autoloom: AI-automatisering die je rompslomp overneemt"},
+en:{ok:"You're on the list. We'll be in touch soon.",err:"Couldn't save that right now. Please try again shortly.",ph:"you@company.com",al:"Email",t:"Autoloom: AI automation that runs your busywork"}};
+var lang="nl";
+var els=[];
+document.querySelectorAll("h1,h2,p,b,a,.sub,form button").forEach(function(e){
+  if(e.children.length||e.closest(".lg"))return;
+  var t=e.textContent.trim();
+  if(EN[t]){e._nl=t;e._en=EN[t];els.push(e)}
+});
+function setLang(l){
+  lang=l;
+  els.forEach(function(e){e.textContent=l==="en"?e._en:e._nl});
+  document.documentElement.lang=l;document.title=M[l].t;
+  document.querySelectorAll("input[type=email]").forEach(function(i){i.placeholder=M[l].ph;i.setAttribute("aria-label",M[l].al)});
+  document.querySelectorAll(".lg button").forEach(function(b){b.classList.toggle("on",b.dataset.l===l)});
+  document.querySelectorAll("[data-note]").forEach(function(n){n.textContent=""});
+  try{localStorage.setItem("lang",l)}catch(e){}
+}
+document.querySelectorAll(".lg button").forEach(function(b){b.addEventListener("click",function(){setLang(b.dataset.l)})});
+var init=null;
+try{init=localStorage.getItem("lang")}catch(e){}
+if(init!=="nl"&&init!=="en")init=(navigator.language||"nl").toLowerCase().indexOf("nl")===0?"nl":"en";
+setLang(init);
+document.querySelectorAll("form[data-wl]").forEach(function(f){
+  f.addEventListener("submit",async function(ev){
+    ev.preventDefault();
+    var inp=f.querySelector("input[type=email]"),btn=f.querySelector("button"),note=f.parentNode.querySelector("[data-note]");
+    if(!inp.value.trim())return;
+    btn.disabled=true;
+    try{
+      var r=await fetch("/",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:new URLSearchParams(new FormData(f)).toString()});
+      if(!r.ok)throw new Error("http");
+      note.textContent=M[lang].ok;inp.value="";
+    }catch(e){
+      note.textContent=M[lang].err;
+    }
+    btn.disabled=false;
+  });
+});
+})();
+</script>
+</body>
+</html>
